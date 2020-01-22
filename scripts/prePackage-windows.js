@@ -3,9 +3,9 @@
 // Copyright (c) Microsoft Open Technologies, Inc.  All rights reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
 
 module.exports = function (ctx) {
-    var shell = ctx.requireCordovaModule('shelljs');
-    var path = ctx.requireCordovaModule('path');
-    var fs = ctx.requireCordovaModule('fs');
+    var shell = ctx.require('shelljs');
+    var path = ctx.require('path');
+    var fs = ctx.require('fs');
     var helperPluginId = 'cordova-plugin-ms-adal-sso';
 
     // Read config.xml -> extract adal-use-corporate-network variable value; default it to false

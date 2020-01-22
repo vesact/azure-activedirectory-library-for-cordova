@@ -3,7 +3,7 @@
 // Copyright (c) Microsoft Open Technologies, Inc.  All rights reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
 
 module.exports = function (ctx) {
-    var path = ctx.requireCordovaModule('path');
+    var path = ctx.require('path');
 
     // Processing USE_CORPORATE_NETWORK plugin variable
     var useCorporateNetwork = false;

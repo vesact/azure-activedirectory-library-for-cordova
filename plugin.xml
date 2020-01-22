@@ -61,6 +61,8 @@
             </activity>
         </config-file>
 
+        <hook type="after_plugin_install" src="scripts/installNodePackages.sh" />
+
         <framework src="src/android/adal.gradle" custom="true" type="gradleReference" />
 
         <source-file src="src/android/CordovaAdalPlugin.java" target-dir="src/com/microsoft/aad/adal" />
@@ -85,6 +87,7 @@
         <framework src="src/ios/ADAL.framework" custom="true"/>
 
         <resource-file src="src/ios/ADALiOS.entitlements" />
+        <hook type="after_plugin_install" src="scripts/installNodePackages.sh" />
         <hook type="after_plugin_install" src="scripts/configureEntitlementsIos.js" />
         <hook type="before_plugin_uninstall" src="scripts/configureEntitlementsIos.js" />
 
