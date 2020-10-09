@@ -27,7 +27,7 @@ module.exports = function (ctx) {
 
         var ssoPluginPath = path.join(ctx.opts.projectRoot, 'plugins/cordova-plugin-ms-adal/src/windows/sso');
 
-        var plugman = ctx.requireCordovaModule('../plugman/plugman');
+        var plugman = ctx.require('../plugman/plugman');
 
         plugman.install(plugmanInstallOpts.platform, plugmanInstallOpts.project, 
             ssoPluginPath, plugmanInstallOpts.plugins_dir);

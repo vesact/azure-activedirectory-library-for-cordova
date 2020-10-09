@@ -43,7 +43,7 @@ module.exports = function (ctx) {
             console.log('Adding SSO helper plugin');
 
             // Enabling dependency
-            var plugman = ctx.requireCordovaModule('../plugman/plugman');
+            var plugman = ctx.require('../plugman/plugman');
 
             plugman.install(plugmanInstallOpts.platform, plugmanInstallOpts.project, 
                 ssoPluginPath, plugmanInstallOpts.plugins_dir);
@@ -57,7 +57,7 @@ module.exports = function (ctx) {
             console.log('Removing SSO helper plugin');
 
             // Removing dependency
-            var plugman = ctx.requireCordovaModule('../plugman/plugman');
+            var plugman = ctx.require('../plugman/plugman');
 
             plugman.uninstall(plugmanInstallOpts.platform, plugmanInstallOpts.project, 
                 helperPluginId, plugmanInstallOpts.plugins_dir);

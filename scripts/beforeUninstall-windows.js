@@ -30,7 +30,7 @@ module.exports = function (ctx) {
             project: path.join(ctx.opts.projectRoot, 'platforms', 'windows')
         };
 
-        var plugman = ctx.requireCordovaModule('../plugman/plugman');
+        var plugman = ctx.require('../plugman/plugman');
 
         plugman.uninstall(plugmanInstallOpts.platform, plugmanInstallOpts.project, 
             helperPluginId, plugmanInstallOpts.plugins_dir);

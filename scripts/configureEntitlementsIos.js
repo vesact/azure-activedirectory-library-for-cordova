@@ -38,7 +38,7 @@ module.exports = function (ctx) {
         iosProjectFile = require(path.join(ctx.opts.projectRoot, 'platforms/ios/cordova/lib/projectFile'));
     } catch (ex) {
         // fallback to cordova-lib (shared platform functionality)
-        iosProjectFile = ctx.requireCordovaModule('../plugman/platforms/ios');
+        iosProjectFile = ctx.require('../plugman/platforms/ios');
     }
 
     fs.readdir(platformRoot, function (err, data) {
