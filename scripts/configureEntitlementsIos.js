@@ -22,9 +22,9 @@ module.exports = function (ctx) {
         return;
     };
 
-    var fs = ctx.require('fs');
-    var path = ctx.require('path');
-    var xcode = ctx.require('xcode');
+    var fs = require('fs');
+    var path = require('path');
+    var xcode = require('xcode');
 
     var deferral = new require('q').defer();
 

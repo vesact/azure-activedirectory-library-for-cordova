@@ -3,9 +3,9 @@
 // Copyright (c) Microsoft Open Technologies, Inc.  All rights reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
 
 module.exports = function (ctx) {
-    var shell = ctx.require('shelljs');
-    var path = ctx.require('path');
-    var fs = ctx.require('fs');
+    var shell = require('shelljs');
+    var path = require('path');
+    var fs = require('fs');
     var helperPluginId = 'cordova-plugin-ms-adal-sso';
 
     // Removing references from .projitems
