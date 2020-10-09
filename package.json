@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-ms-adal",
-  "version": "0.10.1",
-  "description": "Provides Microsoft Azure Active Directory (ADAL) OAuth client.",
+  "version": "0.10.2",
+  "description": "Provides Microsoft Azure Active Directory (ADAL) OAuth client. Forked and edited by Actemium Schweiz AG.",
   "cordova": {
     "id": "cordova-plugin-ms-adal",
     "platforms": [
@@ -36,6 +36,10 @@
         "cordova-android": ">=4.1.0",
         "cordova-windows": ">=4.1.0",
         "cordova": ">=5.4.0"
+      },
+      "0.10.2": {
+        "cordova-android": ">=9.0.0",
+        "cordova": ">=9.0.0"
       },
       "1.0.0": {
         "cordova": ">=100"

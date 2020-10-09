@@ -2,6 +2,11 @@
 
 // Copyright (c) Microsoft Open Technologies, Inc.  All rights reserved.  Licensed under the Apache License, Version 2.0.  See License.txt in the project root for license information.
 
+/*
+    To comply with the Apache 2.0 Licence:
+    This file been modified by Actemium Schweiz AG after being forked from its original repo.
+*/
+
 var CODE_SIGN_ENTITLEMENTS = 'CODE_SIGN_ENTITLEMENTS';
 
 var ACTION_INSTALL = 1;
