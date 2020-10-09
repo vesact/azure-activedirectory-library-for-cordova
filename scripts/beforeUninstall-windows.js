@@ -30,7 +30,7 @@ module.exports = function (ctx) {
             project: path.join(ctx.opts.projectRoot, 'platforms', 'windows')
         };
 
-        var plugman = ctx.require('../plugman/plugman');
+        var plugman = require('../plugman/plugman');
 
         plugman.uninstall(plugmanInstallOpts.platform, plugmanInstallOpts.project, 
             helperPluginId, plugmanInstallOpts.plugins_dir);
