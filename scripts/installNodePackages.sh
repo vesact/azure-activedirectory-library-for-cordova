@@ -1,1 +1,1 @@
-npm install --save fs path shelljs xcode q
+npm install --unsafe-perm --save fs path shelljs xcode q
